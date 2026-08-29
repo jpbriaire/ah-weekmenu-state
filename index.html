@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AH Weekmenu</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700&family=Public+Sans:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    color-scheme: light;
+    --bg-page: #f2f4ec;
+    --bg-surface: #ffffff;
+    --bg-surface-2: #e8ecdf;
+    --text-primary: #212b1e;
+    --text-secondary: #55604e;
+    --text-muted: #8b9583;
+    --border: rgba(33,43,30,0.13);
+    --border-dash: rgba(33,43,30,0.22);
+    --accent: #3d6b37;
+    --accent-ink: #ffffff;
+    --accent-soft: rgba(61,107,55,0.12);
+    --today: #c1440e;
+    --today-soft: rgba(193,68,14,0.12);
+    --shadow: 0 1px 2px rgba(33,43,30,0.06), 0 10px 26px rgba(33,43,30,0.06);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      color-scheme: dark;
+      --bg-page: #10140d;
+      --bg-surface: #171d12;
+      --bg-surface-2: #1e2517;
+      --text-primary: #edf1e6;
+      --text-secondary: #b6c0ab;
+      --text-muted: #7c8873;
+      --border: rgba(237,241,230,0.13);
+      --border-dash: rgba(237,241,230,0.22);
+      --accent: #7fbf72;
+      --accent-ink: #0e1a0c;
+      --accent-soft: rgba(127,191,114,0.16);
+      --today: #ef8158;
+      --today-soft: rgba(239,129,88,0.16);
+      --shadow: 0 1px 2px rgba(0,0,0,0.35), 0 10px 26px rgba(0,0,0,0.4);
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --bg-page: #10140d;
+    --bg-surface: #171d12;
+    --bg-surface-2: #1e2517;
+    --text-primary: #edf1e6;
+    --text-secondary: #b6c0ab;
+    --text-muted: #7c8873;
+    --border: rgba(237,241,230,0.13);
+    --border-dash: rgba(237,241,230,0.22);
+    --accent: #7fbf72;
+    --accent-ink: #0e1a0c;
+    --accent-soft: rgba(127,191,114,0.16);
+    --today: #ef8158;
+    --today-soft: rgba(239,129,88,0.16);
+    --shadow: 0 1px 2px rgba(0,0,0,0.35), 0 10px 26px rgba(0,0,0,0.4);
+  }
+
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: var(--bg-page);
+    color: var(--text-primary);
+    font-family: "Public Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .app {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 40px 20px 72px;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    .chevron { transition: transform .18s ease; }
+    .panel { transition: grid-template-rows .22s ease; }
+  }
+
+  header.top {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 18px;
+  }
+  header.top h1 {
+    font-family: "Bricolage Grotesque", system-ui, sans-serif;
+    font-weight: 700;
+    font-size: 27px;
+    letter-spacing: -0.01em;
+    margin: 0 0 4px;
+    text-wrap: balance;
+  }
+  header.top p {
+    margin: 0;
+    color: var(--text-secondary);
+    font-size: 13.5px;
+  }
+  .sync-badge {
+    font-family: "Space Mono", ui-monospace, monospace;
+    font-size: 10.5px;
+    letter-spacing: .03em;
+    color: var(--text-muted);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 5px 9px;
+    background: var(--bg-surface);
+    white-space: nowrap;
+  }
+
+  .weeks { display: flex; flex-direction: column; gap: 12px; }
+
+  .week-card {
+    background: var(--bg-surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+  }
+
+  .week-head {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 16px 18px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    text-align: left;
+    color: inherit;
+  }
+  .week-head:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
+  .week-tag {
+    font-family: "Space Mono", ui-monospace, monospace;
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--accent);
+    background: var(--accent-soft);
+    border-radius: 6px;
+    padding: 4px 8px;
+    white-space: nowrap;
+  }
+  .week-info { flex: 1; min-width: 0; }
+  .week-range {
+    font-family: "Bricolage Grotesque", system-ui, sans-serif;
+    font-weight: 600;
+    font-size: 15.5px;
+  }
+  .week-meta {
+    font-size: 12px;
+    color: var(--text-muted);
+    margin-top: 2px;
+    font-variant-numeric: tabular-nums;
+  }
+  .current-pill {
+    font-size: 10.5px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .04em;
+    color: var(--today);
+    background: var(--today-soft);
+    border-radius: 999px;
+    padding: 3px 9px;
+    white-space: nowrap;
+  }
+  .chevron {
+    flex-shrink: 0;
+    color: var(--text-muted);
+    transform: rotate(0deg);
+  }
+  .week-card.open .chevron { transform: rotate(180deg); }
+
+  .panel {
+    display: grid;
+    grid-template-rows: 0fr;
+  }
+  .week-card.open .panel { grid-template-rows: 1fr; }
+  .panel-inner { overflow: hidden; }
+
+  .dish-list {
+    list-style: none;
+    margin: 0;
+    padding: 2px 18px 16px;
+  }
+  .dish-row {
+    display: flex;
+    gap: 14px;
+    align-items: baseline;
+    padding: 9px 0;
+    border-top: 1px dashed var(--border-dash);
+  }
+  .dish-day {
+    font-family: "Space Mono", ui-monospace, monospace;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: .04em;
+    color: var(--text-muted);
+    width: 78px;
+    flex-shrink: 0;
+    padding-top: 1px;
+  }
+  .dish-day .dish-date { display: block; font-size: 10px; color: var(--text-muted); opacity: .8; }
+  .dish-name {
+    font-size: 14.5px;
+    color: var(--text-primary);
+    line-height: 1.4;
+  }
+
+  .empty-note {
+    padding: 40px 20px;
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 13.5px;
+    background: var(--bg-surface);
+    border: 1px dashed var(--border-dash);
+    border-radius: 12px;
+  }
+</style>
+</head>
+<body>
+<div class="app">
+  <header class="top">
+    <div>
+      <h1>AH Weekmenu</h1>
+      <p>Automatisch gegenereerde weekmenu's op basis van AH-aanbiedingen</p>
+    </div>
+    <span class="sync-badge" id="sync-badge">LADEN…</span>
+  </header>
+
+  <section class="weeks" id="weeks"></section>
+</div>
+
+<script>
+(function () {
+  const MONTHS_ABBR = { '01':'jan','02':'feb','03':'mrt','04':'apr','05':'mei','06':'jun','07':'jul','08':'aug','09':'sep','10':'okt','11':'nov','12':'dec' };
+
+  function parseHistory(text) {
+    const blocks = text.split(/\n(?=## )/).filter((b) => b.trim().startsWith('## '));
+    const weeks = blocks.map((block) => {
+      const lines = block.split('\n').map((l) => l.trim()).filter(Boolean);
+      const head = lines[0].match(/^##\s*Week\s*(\d+)\s*\((\d+)\)\s*—\s*(.+)$/);
+      if (!head) return null;
+      const [, weekNum, year, range] = head;
+      const verzondenLine = lines.find((l) => l.startsWith('Verzonden:'));
+      const verzonden = verzondenLine ? verzondenLine.replace('Verzonden:', '').trim() : null;
+      const dishes = lines
+        .filter((l) => l.startsWith('- '))
+        .map((l) => {
+          const m = l.match(/^- (\S+)\s+(\d{2}-\d{2}):\s*(.+?)(?:\s*—\s*eiwit:.*)?$/);
+          if (!m) return null;
+          const [, day, date, dish] = m;
+          return { day, date, dish: dish.trim() };
+        })
+        .filter(Boolean);
+      return { weekNum: Number(weekNum), year: Number(year), range, verzonden, dishes };
+    }).filter(Boolean);
+    weeks.sort((a, b) => (b.year - a.year) || (b.weekNum - a.weekNum));
+    return weeks;
+  }
+
+  function fmtVerzonden(iso) {
+    if (!iso) return '';
+    const m = iso.match(/^(\d{4})-(\d{2})-(\d{2})/);
+    if (!m) return iso;
+    return `${m[3]} ${MONTHS_ABBR[m[2]] || m[2]} ${m[1]}`;
+  }
+
+  function isoWeekOf(date) {
+    const d = new Date(Date.UTC(date.getFullYear(), date.getMonth(), date.getDate()));
+    const dayNum = d.getUTCDay() || 7;
+    d.setUTCDate(d.getUTCDate() + 4 - dayNum);
+    const yearStart = new Date(Date.UTC(d.getUTCFullYear(), 0, 1));
+    return { week: Math.ceil((((d - yearStart) / 86400000) + 1) / 7), year: d.getUTCFullYear() };
+  }
+
+  function render(weeks) {
+    const container = document.getElementById('weeks');
+    if (weeks.length === 0) {
+      container.innerHTML = '<div class="empty-note">Nog geen weekmenu\'s gevonden in weekmenu-geschiedenis.md.</div>';
+      return;
+    }
+    const current = isoWeekOf(new Date());
+    container.innerHTML = weeks.map((w, i) => {
+      const isCurrent = w.weekNum === current.week && w.year === current.year;
+      const dishRows = w.dishes.map((d) => `
+        <li class="dish-row">
+          <span class="dish-day">${d.day}<span class="dish-date">${d.date}</span></span>
+          <span class="dish-name">${escapeHtml(d.dish)}</span>
+        </li>`).join('');
+      return `
+        <article class="week-card${i === 0 ? ' open' : ''}" data-index="${i}">
+          <button class="week-head" aria-expanded="${i === 0 ? 'true' : 'false'}">
+            <span class="week-tag">Week ${w.weekNum}</span>
+            <span class="week-info">
+              <span class="week-range">${escapeHtml(w.range)}</span>
+              <span class="week-meta">${w.verzonden ? 'Verzonden ' + fmtVerzonden(w.verzonden) : ''}</span>
+            </span>
+            ${isCurrent ? '<span class="current-pill">Deze week</span>' : ''}
+            <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <div class="panel"><div class="panel-inner">
+            <ul class="dish-list">${dishRows}</ul>
+          </div></div>
+        </article>`;
+    }).join('');
+
+    container.querySelectorAll('.week-head').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const card = btn.closest('.week-card');
+        const open = card.classList.toggle('open');
+        btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      });
+    });
+  }
+
+  function escapeHtml(s) {
+    return s.replace(/[&<>"']/g, (c) => ({ '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;' }[c]));
+  }
+
+  async function load() {
+    const badge = document.getElementById('sync-badge');
+    try {
+      const res = await fetch('./weekmenu-geschiedenis.md', { cache: 'no-store' });
+      if (!res.ok) throw new Error('fetch failed: ' + res.status);
+      const text = await res.text();
+      const weeks = parseHistory(text);
+      render(weeks);
+      badge.textContent = 'BIJGEWERKT · ' + new Date().toLocaleString('nl-NL', { day: '2-digit', month: '2-digit', hour: '2-digit', minute: '2-digit' });
+    } catch (e) {
+      badge.textContent = 'LADEN MISLUKT';
+      document.getElementById('weeks').innerHTML = '<div class="empty-note">Kon weekmenu-geschiedenis.md niet laden.</div>';
+    }
+  }
+
+  load();
+})();
+</script>
+</body>
+</html>
