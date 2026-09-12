@@ -17,3 +17,12 @@ Verzonden: 2026-09-05
 - Woensdag 09-09: Gouda schnitzel van Valess met rodekool en aardappelpuree — eiwit: Valess Gouda schnitzel (vegetarisch)
 - Donderdag 10-09: Italiaanse gehaktballetjes in tomatensaus met broccoli en stokbrood — eiwit: gemengd gehakt rund/varken
 - Vrijdag 11-09: Goedgevulde paprika's met kipgehakt en rijst — eiwit: kipgehakt (kip)
+
+## Week 38 (2026) — 14-09 t/m 18-09
+Verzonden: 2026-09-12
+
+- Maandag 14-09: Griekse keftedes met tzatziki, tomaten-komkommersalade en pitabroodjes — eiwit: rundergehakt (rund)
+- Dinsdag 15-09: Varkenshaas met zwarte-knoflookjus, krieltjes en sperziebonen — eiwit: varkenshaas (varken)
+- Woensdag 16-09: Kip piri piri met komkommersalade en stokbrood — eiwit: scharrelkip (kip)
+- Donderdag 17-09: Marokkaanse groentestoofpot met kikkererwten en couscous — eiwit: kikkererwten (vegetarisch)
+- Vrijdag 18-09: Varkensribeye met ovengegrilde groente en frisse salade — eiwit: varkensribeye (varken)
