@@ -26,3 +26,12 @@ Verzonden: 2026-09-12
 - Woensdag 16-09: Kip piri piri met komkommersalade en stokbrood — eiwit: scharrelkip (kip)
 - Donderdag 17-09: Marokkaanse groentestoofpot met kikkererwten en couscous — eiwit: kikkererwten (vegetarisch)
 - Vrijdag 18-09: Varkensribeye met ovengegrilde groente en frisse salade — eiwit: varkensribeye (varken)
+
+## Week 39 (2026) — 21-09 t/m 25-09
+Verzonden: 2026-09-19
+
+- Maandag 21-09: Steak de boeuf met gebakken aardappeltjes en sperziebonen — eiwit: biefstuk/steak de boeuf (rund)
+- Dinsdag 22-09: Citroenkip uit de oven met broccoli en stokbrood — eiwit: kipfilet (kip)
+- Woensdag 23-09: Filetlapjes met uienjus, aardappel-selderijpuree en witlof — eiwit: filetlapjes (varken)
+- Donderdag 24-09: Quiche spinazie-geitenkaas met tomatensalade en stokbrood — eiwit: ei/geitenkaas (vegetarisch)
+- Vrijdag 25-09: Kipsaté met pindasaus, kroepoek en atjar — eiwit: kipfilethaasjes (kip)
