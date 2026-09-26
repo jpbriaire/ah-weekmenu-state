@@ -35,3 +35,12 @@ Verzonden: 2026-09-19
 - Woensdag 23-09: Filetlapjes met uienjus, aardappel-selderijpuree en witlof — eiwit: filetlapjes (varken)
 - Donderdag 24-09: Quiche spinazie-geitenkaas met tomatensalade en stokbrood — eiwit: ei/geitenkaas (vegetarisch)
 - Vrijdag 25-09: Kipsaté met pindasaus, kroepoek en atjar — eiwit: kipfilethaasjes (kip)
+
+## Week 40 (2026) — 28-09 t/m 02-10
+Verzonden: 2026-09-26
+
+- Maandag 28-09: Provençaalse kip met groene groenten en krieltjes — eiwit: scharrelkip (kip)
+- Dinsdag 29-09: Chili con carne (zonder pakje) met stokbrood — eiwit: gemengd gehakt rund/varken
+- Woensdag 30-09: Falafelwrap met hummus, tomaat en komkommer — eiwit: falafel/kikkererwt (vegetarisch)
+- Donderdag 01-10: Klassieke boerenkoolstamppot met rookworst — eiwit: rookworst (varken)
+- Vrijdag 02-10: Real American Hamburger met frisse salade — eiwit: runderhamburger (rund)
