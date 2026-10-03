@@ -44,3 +44,12 @@ Verzonden: 2026-09-26
 - Woensdag 30-09: Falafelwrap met hummus, tomaat en komkommer — eiwit: falafel/kikkererwt (vegetarisch)
 - Donderdag 01-10: Klassieke boerenkoolstamppot met rookworst — eiwit: rookworst (varken)
 - Vrijdag 02-10: Real American Hamburger met frisse salade — eiwit: runderhamburger (rund)
+
+## Week 41 (2026) — 05-10 t/m 09-10
+Verzonden: 2026-10-03
+
+- Maandag 05-10: Pittige nasi goreng met varkensvlees — eiwit: nasi bami vlees (varken)
+- Dinsdag 06-10: Zweedse balletjes (vegan) met bietensalade en cranberrycompote — eiwit: Vegetarische Slager vegan Zweedsche gehacktballetjes (vegetarisch)
+- Woensdag 07-10: Noedels met kalkoen, Aziatische groente en pindadressing — eiwit: kalkoenfilet blokjes (kalkoen)
+- Donderdag 08-10: Gehaktcurry met naanbrood — eiwit: rundergehakt (rund)
+- Vrijdag 09-10: Eendenborst met sinaasappelsaus — eiwit: eendenborstfilet (eend)
