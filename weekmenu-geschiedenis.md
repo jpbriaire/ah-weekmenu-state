@@ -1,5 +1,14 @@
 # Weekmenu-geschiedenis
 
+## Week 42 (2026) — 12-10 t/m 16-10
+Verzonden: 2026-10-10
+
+- Maandag 12-10: Runderpicanha met chimichurri, rijst en frisse koolsalade — eiwit: runderpicanha (rund)
+- Dinsdag 13-10: Lamshaasjes met mosterd-rozemarijnkorst, geroosterde groenten en stokbrood — eiwit: lamshaasjes (lam)
+- Woensdag 14-10: Kipdöner uit de oven met knoflooksaus, gegrilde groente en pitabroodjes — eiwit: kipdijfilet döner (kip)
+- Donderdag 15-10: Vegetarische taco's met kruimgehakt, mais en zwarte bonenpuree — eiwit: Vivera plantaardig kruimgehakt (vegetarisch)
+- Vrijdag 16-10: Iberico ribfingers met sojaglaze, jasmijnrijst en komkommersalade — eiwit: iberico ribfingers (varken)
+
 ## Week 36 (2026) — 31-08 t/m 04-09
 Verzonden: 2026-08-29
 
