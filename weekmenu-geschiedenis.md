@@ -1,5 +1,14 @@
 # Weekmenu-geschiedenis
 
+## Week 44 (2026) — 26-10 t/m 30-10
+Verzonden: 2026-10-24
+
+- Maandag 26-10: Varkensschnitzel met citroen, sperziebonen en stokbrood — eiwit: varkensschnitzel (varken)
+- Dinsdag 27-10: Sticky chicken bowl met jasmijnrijst en broccoli — eiwit: AH Scharrel sticky chicken Korean BBQ stijl (kip)
+- Woensdag 28-10: Pita vegetarische shoarma met knoflooksaus en tomaat-komkommersalade — eiwit: Redefine Meat Shoarma (vegetarisch)
+- Donderdag 29-10: Pasta met gehaktballetjes in romige tomaat-mascarponesaus — eiwit: AH Gehaktballetjes Hollands (rund)
+- Vrijdag 30-10: Spareribs uit Singapore met komkommersalade en stokbrood — eiwit: AH Krabbetjes (varken)
+
 ## Week 42 (2026) — 12-10 t/m 16-10
 Verzonden: 2026-10-10
 
