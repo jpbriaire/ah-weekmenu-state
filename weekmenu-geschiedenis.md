@@ -1,5 +1,14 @@
 # Weekmenu-geschiedenis
 
+## Week 45 (2026) — 02-11 t/m 06-11
+Verzonden: 2026-10-31
+
+- Maandag 02-11: Steak au poivre met friet en tomaat-courgettetian — eiwit: AH Biefstuk 2 stuks (rund)
+- Dinsdag 03-11: Pittige chicken wings met coleslaw en stokbrood — eiwit: Cucina Spicy chicken wings (kip)
+- Woensdag 04-11: Gouda kaasschnitzel met mediterrane aardappeltjes en snijbonen — eiwit: Vivera Vegetarische Gouda kaasschnitzel (vegetarisch)
+- Donderdag 05-11: Krokante boomstamburger-sandwich met kaas en tomaat-komkommersalade — eiwit: AH Krokante Boomstamburger (varken)
+- Vrijdag 06-11: Fruitige kipcurry met naanbrood — eiwit: Cucina Kipblokjes Indiase curry (kip)
+
 ## Week 44 (2026) — 26-10 t/m 30-10
 Verzonden: 2026-10-24
 
