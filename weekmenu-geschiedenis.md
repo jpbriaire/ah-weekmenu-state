@@ -1,5 +1,14 @@
 # Weekmenu-geschiedenis
 
+## Week 46 (2026) — 09-11 t/m 13-11
+Verzonden: 2026-11-07
+
+- Maandag 09-11: Ovenschotel met gehakt, bloemkoolrijst en aardappelpuree — eiwit: AH Gemengd gehakt (rund/varken half-om-half)
+- Dinsdag 10-11: Pita kip met knoflooksaus en ingelegde rode ui — eiwit: AH Franse scharrelkip dijfilet (kip)
+- Woensdag 11-11: Vegetarische kip kerrie met rijst en sperziebonen — eiwit: Valess Vegetarische chick'n filet (vegetarisch)
+- Donderdag 12-11: Gegrilde varkenshaas met romige mosterdsaus en broccoli — eiwit: AH Varkenshaas (varken)
+- Vrijdag 13-11: Sweet chili kip met pinda-wokgroenten en stokbrood — eiwit: AH Gegrilde halve kip sweet chili (kip)
+
 ## Week 45 (2026) — 02-11 t/m 06-11
 Verzonden: 2026-10-31
 
