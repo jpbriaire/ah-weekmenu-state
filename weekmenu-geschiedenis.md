@@ -1,5 +1,14 @@
 # Weekmenu-geschiedenis
 
+## Week 47 (2026) — 16-11 t/m 20-11
+Verzonden: 2026-11-14
+
+- Maandag 16-11: Gehaktbal in jus met rodekool en puree — eiwit: AH Mager rundergehakt (rund)
+- Dinsdag 17-11: Kipdrumsticks uit de oven met bloemkool en kruidenboter — eiwit: AH Scharrel kipkluifjes gemarineerd (kip)
+- Woensdag 18-11: Karbonade met appel uit de oven — eiwit: AH Schouderkarbonade (varken)
+- Donderdag 19-11: Linzenschotel met spek, runderrookworst en kool — eiwit: AH Runderrookworst (rund)
+- Vrijdag 20-11: Saté babi met pindasaus, atjar en kroepoek — eiwit: AH Roerbakvlees Indische stijl / varkenshaasreepjes (varken)
+
 ## Week 46 (2026) — 09-11 t/m 13-11
 Verzonden: 2026-11-07
 
